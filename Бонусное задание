@@ -1,0 +1,10 @@
+array = [int(i) for i in input().split()] 
+delta = int(input())
+mn = array[0]
+count = 0
+for i in array:
+    mn = mn(i, mn)
+for i in array:
+    if mn + delta == i:
+        count += 1         
+print(count)
